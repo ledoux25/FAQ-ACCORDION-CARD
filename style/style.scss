@@ -130,21 +130,19 @@ main {
   }
 }
 @media screen and (max-width : 700px)  {
-  body{
-    overflow-y: visible;
-  }
+
   main{
     position: relative;
     flex-direction: column;
     overflow: visible;
     min-width: 250px;
-    min-height: 70vh;
+    height: 60vh;
+    min-height: 0vh;
     padding: 0 15px 15px 15px;
     justify-items: flex-end;
     align-items: center;
     padding-bottom: 15px;
     max-width: 300px;
-    margin-top: 100px;
 
     .text-section{
       position: relative;
@@ -168,7 +166,7 @@ main {
       width: 80%;
       background-position: 0% 190%;
       padding-bottom: 25px;
-      transform: translate(0px,-115px);
+      top: -30%;
       // transform: scale(0.8);
     }
     .box{
