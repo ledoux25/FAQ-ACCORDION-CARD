@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  margin: 0%;
   overflow: hidden;
 }
 
@@ -39,12 +40,13 @@ main {
   padding-right: 8%;
   overflow: hidden;
   width: 68%;
+  min-width: 700px;
   // height: 75vh;
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 430px;
+  max-height: 430px;
   .image-section {
     position: relative;
-    right: 13%;
+    right: 10%;
     width: 75%;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-size: cover;
@@ -53,17 +55,17 @@ main {
   }
   img {
     padding-top: 5%;
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
   .box {
     position: absolute;
-    top: 31%;
+    top: 28%;
     z-index: 1;
     left: 5%;
   }
   .text-section {
     position: relative;
-    width: 50%;
+    width: 100%;
     max-width: 50%;
     margin: 5% 0 10% 0;
     .question {
@@ -76,7 +78,7 @@ main {
       transition: padding-bottom 0.7s;
       cursor: pointer;
       img {
-        transform: scale(0.7);
+        transform: scale(0.9);
       }
     }
     .question:hover {
@@ -107,6 +109,72 @@ main {
       max-height: 500px;
       opacity: 1;
       transition: max-height 0.9s, opacity 0.3s;
+    }
+  }
+}
+
+@media screen and (max-width : 950px)  {
+  main{
+    .box{
+      top: 30%;
+      left: 0%!important;
+    }
+  }
+}
+@media screen and (max-width : 850px)  {
+  main{
+    .box{
+      top: 30%;
+      left: -5%!important;
+    }
+  }
+}
+@media screen and (max-width : 700px)  {
+  body{
+    overflow-y: visible;
+  }
+  main{
+    position: relative;
+    flex-direction: column;
+    overflow: visible;
+    min-width: 250px;
+    min-height: 75vh;
+    padding: 0;
+    justify-items: flex-end;
+    align-items: center;
+    padding-bottom: 15px;
+    max-width: 300px;
+    margin-top: 100px;
+
+    .text-section{
+      position: relative;
+      max-width: 90%;
+      height:auto;
+      padding: 0;
+      margin: 0;
+      top: 20%;
+      .question{
+        padding: 0;
+       font-size: 12px;
+
+      }
+      h1{
+        text-align: center;
+      }
+    }
+    .image-section{
+      position: absolute;
+      height: auto;
+      width: 80%;
+      background-position: 0% 190%;
+      padding-bottom: 25px;
+      transform: translate(0px,-125px);
+      // transform: scale(0.8);
+    }
+    .box{
+      display: none;
+      top: 30%;
+      left: -5%!important;
     }
   }
 }
