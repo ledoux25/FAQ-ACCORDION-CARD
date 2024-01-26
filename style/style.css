@@ -36,6 +36,7 @@ main {
   overflow: hidden;
   width: 68%;
   min-width: 700px;
+  max-width: 1000px;
   min-height: 430px;
   max-height: 430px;
 }
