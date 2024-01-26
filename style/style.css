@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+::after::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  font-size: 12px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 8%;
+  overflow: hidden;
+  width: 68%;
+  min-height: 400px;
+  max-height: 400px;
+}
+main .image-section {
+  position: relative;
+  right: 13%;
+  width: 75%;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-position: left;
+  height: 100%;
+}
+main img {
+  padding-top: 5%;
+  transform: scale(0.8);
+}
+main .box {
+  position: absolute;
+  top: 31%;
+  z-index: 1;
+  left: 5%;
+}
+main .text-section {
+  position: relative;
+  width: 50%;
+  max-width: 50%;
+  margin: 5% 0 10% 0;
+}
+main .text-section .question {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(240, 6%, 50%);
+  padding-right: 15px;
+  transition: padding-bottom 0.7s;
+  cursor: pointer;
+}
+main .text-section .question img {
+  transform: scale(0.7);
+}
+main .text-section .question:hover {
+  color: hsl(14, 88%, 65%);
+}
+main .text-section .question-active {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+  padding-bottom: 10px;
+  transition: padding-bottom 0.2s;
+}
+main .text-section .question-active .icon {
+  transform: rotate(180deg);
+}
+main .text-section hr {
+  margin: 15px 0px;
+  color: hsl(240, 5%, 91%);
+}
+main .text-section .answer {
+  max-height: 0;
+  overflow: hidden;
+  color: hsl(240, 6%, 50%);
+  transition: max-height 0.1s, opacity 0.3s;
+}
+main .text-section .answer-active {
+  display: inline;
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 0.9s, opacity 0.3s;
+}/*# sourceMappingURL=style.css.map */
