@@ -130,7 +130,6 @@ main {
   }
 }
 @media screen and (max-width : 700px)  {
-
   main{
     position: relative;
     flex-direction: column;
@@ -141,7 +140,7 @@ main {
     padding: 0 15px 15px 15px;
     justify-items: flex-end;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     max-width: 300px;
 
     .text-section{
@@ -150,7 +149,7 @@ main {
       height:auto;
       padding: 0;
       margin: 0;
-      top: 20%;
+      top: 18%;
       .question{
         padding: 0;
        font-size: 12px;
@@ -166,7 +165,7 @@ main {
       width: 80%;
       background-position: 0% 190%;
       padding-bottom: 25px;
-      top: -30%;
+      top: -28%;
       // transform: scale(0.8);
     }
     .box{

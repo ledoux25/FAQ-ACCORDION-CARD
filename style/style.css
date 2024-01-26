@@ -129,7 +129,7 @@ main .text-section .answer-active {
     padding: 0 15px 15px 15px;
     justify-items: flex-end;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     max-width: 300px;
   }
   main .text-section {
@@ -138,7 +138,7 @@ main .text-section .answer-active {
     height: auto;
     padding: 0;
     margin: 0;
-    top: 20%;
+    top: 18%;
   }
   main .text-section .question {
     padding: 0;
@@ -153,7 +153,7 @@ main .text-section .answer-active {
     width: 80%;
     background-position: 0% 190%;
     padding-bottom: 25px;
-    top: -30%;
+    top: -28%;
   }
   main .box {
     display: none;
